@@ -17,8 +17,11 @@ jobs:
         with:
           node-version: 16.x
 
+      - name: Install dependencies
       - run: npm install
+
+      - name: Run tests
       - run: npm test
 
-      - name: Check eslint
+      - name: Check linting
       - run: npm run lint
