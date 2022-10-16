@@ -1,7 +1,9 @@
 function Home() {
+  const title = "Hello," + " Home";
+
   return (
     <div>
-      <h1>Home</h1>
+      <h1>{title}</h1>
     </div>
   );
 }

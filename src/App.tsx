@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 export function App() {
   return (
     <Routes>
-      <Route path={"/" + "raiz"} element={<Home />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   );
 }
