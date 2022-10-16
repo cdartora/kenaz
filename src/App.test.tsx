@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import { App } from "./App";
+import WrappedApp from "./App";
 
 describe("App", () => {
   it("renderiza Hello World", () => {
-    render(<App />);
-    expect(screen.getByText(/Home/i)).toBeInTheDocument();
+    render(<WrappedApp />);
+    expect(screen.getByText(/Not Home/i)).toBeInTheDocument();
   });
 });
