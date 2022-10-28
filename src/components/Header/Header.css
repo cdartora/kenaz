@@ -1,0 +1,39 @@
+.header {
+  @apply flex justify-between items-center w-full p-4
+}
+
+.header > a {
+  @apply w-16
+}
+
+.header > svg {
+  @apply cursor-pointer
+}
+
+.side-bar {
+  @apply flex flex-col fixed bg-gray-50 h-full top-0 right-[-100%] transition-all w-2/3 max-w-md text-xl
+}
+
+.side-bar.active {
+  @apply right-0 transition-all
+}
+
+.side-bar-button {
+  @apply flex justify-end mb-5 cursor-pointer p-4 py-8
+}
+
+.side-bar-items {
+  @apply flex flex-col h-full justify-start items-center p-10 gap-8
+}
+
+.side-bar-items > a {
+  @apply hover:underline underline-offset-4
+}
+
+.backdrop {
+  @apply fixed top-0 right-[-100%] w-full h-screen bg-black opacity-10
+}
+
+.backdrop.active {
+  @apply right-0
+}
