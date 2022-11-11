@@ -1,5 +1,11 @@
+import BooksSection from "../components/Books/BooksSection";
+
 function Home() {
-  return <h1>Home</h1>;
+  return (
+    <div className="flex justify-center items-center">
+      <BooksSection />
+    </div>
+  );
 }
 
 export default Home;

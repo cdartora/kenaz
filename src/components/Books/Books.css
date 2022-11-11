@@ -1,0 +1,47 @@
+.container {
+  @apply flex flex-col p-4 text-gray-900 w-full items-center
+}
+
+.title-container {
+  @apply flex w-full justify-center relative mb-4 max-w-2xl
+}
+
+.title-container > h1 {
+  @apply leading-10 text-4xl font-medium mx-auto
+}
+
+.title-container > a {
+  @apply hover:underline underline-offset-2 flex flex-col justify-end absolute right-0 bottom-0
+}
+
+.books-container {
+  @apply flex justify-center gap-3 max-w-4xl
+}
+
+.book-card-container {
+  @apply w-40 hover:underline underline-offset-2
+}
+
+.book-card-container {
+  @apply flex flex-col
+}
+
+.book-card-container > img {
+  @apply mb-2
+}
+
+.book-card-container > h2 {
+  @apply font-normal leading-5
+}
+
+.book-card-container > h3 {
+  @apply font-normal text-[#515151] text-sm
+}
+
+.cover {
+  @apply h-56
+}
+
+.overflow {
+  @apply hidden md:block
+}
