@@ -13,3 +13,8 @@ export const requestRecommendedBooks = async () => {
   const { data } = await api.get("/books/recommended");
   return data;
 };
+
+export const requestEvents = async () => {
+  const { data } = await api.get("/events");
+  return data;
+};

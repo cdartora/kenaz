@@ -8,7 +8,7 @@ function BookProvider({ children }: PropsWithChildren) {
 
   const fetchBooks = async () => {
     const books = await requestRecommendedBooks();
-    console.log(books);
+    console.log("-------------recommended books-------------", books);
     setRecommendedBooks(books);
     setIsLoading(false);
   };
